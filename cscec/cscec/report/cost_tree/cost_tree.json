@@ -16,7 +16,7 @@
  "name": "Cost Tree",
  "owner": "Administrator",
  "prepared_report": 0,
- "ref_doctype": "Stock Entry",
+ "ref_doctype": "Purchase Order",
  "report_name": "Cost Tree",
  "report_type": "Script Report",
  "roles": [
