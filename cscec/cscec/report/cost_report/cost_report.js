@@ -12,7 +12,7 @@ frappe.query_reports["Cost Report"] = {
       fieldname: "doctype",
       label: __("Doctype"),
       fieldtype: "Select",
-      options: ["Stock Entry", "Purchase Order"],
+      options: ["Stock Entry", "Purchase Order", "Purchase Receipt"],
       default: "Stock Entry",
       reqd: 1
     },

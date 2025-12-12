@@ -38,6 +38,19 @@ DOCMAP: Dict[str, Dict[str, Any]] = {
         "amount_expr": "child.amount",
         "docstatus": 1,
     },
+    "Purchase Receipt": {
+        "parent": "Purchase Receipt",
+        "child": "Purchase Receipt Item",
+        "date_field": "posting_date",
+        "project_field": "project",
+        "cc_field_child": "custom_cost_code_id",
+        "item_field": "item_code",
+        "qty_field": "qty",
+        "uom_field": "uom",
+        "rate_expr": "COALESCE(child.rate, child.valuation_rate)",
+        "amount_expr": "COALESCE(child.rate, child.valuation_rate) * child.qty",
+        "docstatus": 1,
+    },
 }
 
 
